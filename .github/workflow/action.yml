@@ -1,4 +1,4 @@
-name: Practice CI with GitHub Actions using Ant and JUnit | © 2020 by giao.lang
+name: MathUtil with JUnit and CI using Ant | © 2020 by thuan.tran
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the main branch
@@ -24,7 +24,6 @@ jobs: # Những công việc dev làm thường ngày: lấy code, build, chạy
       - name: Set up JDK 1.8 
         uses: actions/setup-java@v1 # Khai báo cần dùng JDK để build
         with:
-          java-version: 1.8 # Khai báo sử dụng phiên bản JDK 1.8 để build
      
       - name: Build project with Ant
         run: ant -noinput -buildfile build.xml # Quá trình build sẽ cần đến file cấu hình build.xml, build-impl.xml
